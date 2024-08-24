@@ -7,7 +7,7 @@ generator client {
   provider = "prisma-client-js"
 }
 
-model User {
+model users {
   id           Int      @id @default(autoincrement())
   twitter_id   String   @unique
   twitter_icon String
@@ -16,12 +16,11 @@ model User {
   deleted_at   DateTime?
 }
 
-model AppliedCompany {
+model applied_companies {
   id            Int      @id @default(autoincrement())
   url           String
   company_name  String
   applied_date  DateTime
   deleted_at    DateTime?
-  userId        Int
-  user          User     @relation(fields: [userId], references: [id])
+  user_id        Int
 }

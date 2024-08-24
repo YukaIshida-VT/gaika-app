@@ -4,6 +4,7 @@ npx prisma migrate dev --name init
 ```
 
 ## フルスタックアプリケーションのフォルダ構成例
+```
 my-fullstack-app/
 │
 ├── client/                # React (フロントエンド)
@@ -32,3 +33,4 @@ my-fullstack-app/
 ├── .gitignore             # Gitで無視するファイル
 ├── README.md              # プロジェクト説明
 └── package.json           # 共通の依存関係やスクリプト（必要に応じて）
+```
